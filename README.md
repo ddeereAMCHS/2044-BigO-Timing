@@ -5,6 +5,8 @@
 - Create an array of that size
 - For each of the 10 trials:
   - Use the Random class to generate random integers to fill that array
+  - For the search algorithms, generate a random integer to search for
+  - For the binary search algorithm, sort the array
   - Time the algorithm
   - Print how long it takes the algorithm to run
 - Enter the values into a spreadsheet
@@ -13,6 +15,8 @@
   - Determine the time complexity of the algorithm
     - To do this, you will need to graph input size on the x-axis and time (or some modification of it) on the y-axis
 
+You will not turn in any code for this assignment, only the spreadsheet\
+\
 Use the following input sizes:\
 100\
 1000\

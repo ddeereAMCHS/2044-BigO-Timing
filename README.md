@@ -14,8 +14,9 @@
   - Calculate the average time for each input size
   - Determine the time complexity of the algorithm
     - To do this, you will need to graph input size on the x-axis and time (or some modification of it) on the y-axis
-- You will not turn in any code for this assignment, only the spreadsheet 
 
+You will not turn in any code for this assignment, only the spreadsheet\
+\
 Use the following input sizes:\
 100\
 1000\

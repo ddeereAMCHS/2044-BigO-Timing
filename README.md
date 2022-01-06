@@ -5,6 +5,8 @@
 - Create an array of that size
 - For each of the 10 trials:
   - Use the Random class to generate random integers to fill that array
+  - For the search algorithms, generate a random integer to search for
+  - For the binary search algorithm, sort the array
   - Time the algorithm
   - Print how long it takes the algorithm to run
 - Enter the values into a spreadsheet

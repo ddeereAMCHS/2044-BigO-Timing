@@ -1,5 +1,7 @@
 # Timing
 
+## Due: DoW MM/DD at 11:59 PM
+
 - Create a program called `Timing.java`
 - Prompt the user for a number
 - Create an array of that size

@@ -28,6 +28,18 @@ public class Util {
     }
   }
 
+  public static void selectionSort(int arr[]) {
+    for (int i = 0; i < arr.length-1; i++) {
+      int min_idx = i;
+      for (int j = i+1; j < arr.length; j++) {
+        if (arr[j] < arr[min_idx]) { min_idx = j; }
+      }
+      int temp = arr[min_idx];
+      arr[min_idx] = arr[i];
+      arr[i] = temp;
+    }
+  }
+
   public static void insertionSort(int[] arr) {
     for (int i = 1; i < arr.length; ++i) {
       int key = arr[i];
@@ -90,5 +102,31 @@ public class Util {
       j++;
       k++;
     }
+  }
+  
+  public static void quickSort(int[] arr, int left, int right) {
+    if (left >= right) { return; }
+
+    int idxPart = partition(arr, left, right);
+    quickSort(arr, left, idxPart - 1);
+    quickSort(arr, idxPart + 1, right);
+  }
+
+  public static int partition(int[] arr, int left, int right) {
+    int pivot = arr[right]; // select last element as pivot value
+
+    int i = left;
+    for (int j = left; j < right; j++) {
+      if (arr[j] < pivot) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+      }
+    }
+    int temp = arr[i];
+    arr[i] = arr[right];
+    arr[right] = temp;
+    return i;
   }
 }

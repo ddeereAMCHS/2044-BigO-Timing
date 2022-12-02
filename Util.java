@@ -28,6 +28,19 @@ public class Util {
     }
   }
 
+  public static void insertionSort(int[] arr) {
+    for (int i = 1; i < arr.length; ++i) {
+      int key = arr[i];
+      int j = i - 1;
+
+      while (j >= 0 && arr[j] > key) {
+        arr[j + 1] = arr[j];
+        j--;
+      }
+      arr[j + 1] = key;
+    }
+  }
+
   public static void mergeSort(int[] arr, int left, int right) {
     if (left >= right) { return; }
     int mid = (left + right) / 2;
@@ -76,19 +89,6 @@ public class Util {
       arr[k] = arrRight[j];
       j++;
       k++;
-    }
-  }
-
-  public static void insertionSort(int[] arr) {
-    for (int i = 1; i < arr.length; ++i) {
-      int key = arr[i];
-      int j = i - 1;
-
-      while (j >= 0 && arr[j] > key) {
-        arr[j + 1] = arr[j];
-        j--;
-      }
-      arr[j + 1] = key;
     }
   }
 }

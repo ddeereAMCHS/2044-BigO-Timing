@@ -10,6 +10,7 @@
     - I have given this code to you
   - For the search algorithms, generate a random integer to search for
   - For the binary search algorithm, sort the array before you start timing
+    - You could time the sorting algorithm and output the value, then time the binary search algorithm to not be redundant
   - Time the algorithm
   - Print how long it takes the algorithm to run
 - Enter the values into a spreadsheet

@@ -1,6 +1,6 @@
 # Timing
 
-## Due: Wed 12/7 at 11:59 PM
+## Due: Wed 11/29 at 11:59 PM
 
 - Open the file called `Timing.java`
 - Each algorithm has a text file listing the sizes you should use for that algorithm
